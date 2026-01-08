@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://images.shiksha.com/mediadata/images/1677064104phpvnkQ4T.jpeg">
+    <title>Startup Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="mt-4 mb-5">
+
+        <h2 class="text-center mb-4">Startup Registration Form</h2>
+
+        <form id="startupForm" class="p-4 bg-white" novalidate>
+
+            <div class="container bg-light shadow-sm rounded p-3">
+                <div class="pt-3 text-primary h5">Personal Information</div>
+
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <input name="firstName" type="text" class="form-control" placeholder="First Name*" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input name="lastName" type="text" class="form-control" placeholder="Last Name*" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input name="email" type="email" class="form-control" placeholder="Email Address*" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <input name="mobile" type="text" class="form-control" placeholder="Mobile Number*" required>
+                    </div>
+                </div>
+
+                <div class="h5 text-primary">Location Details</div>
+
+                <div class="row mt-3">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Country <span style="color:red">*</span></label>
+                        <select name="country" class="form-select" required>
+                            <option disabled selected value="">Select Country</option>
+                            <option>India</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">State <span style="color:red">*</span></label>
+                        <select name="state" class="form-select" required>
+                            <option disabled selected value="">Select State</option>
+                            <option>Tamil Nadu</option>
+                            <option>Kerala</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Karnataka</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">District <span style="color:red">*</span></label>
+                        <input name="district" type="text" class="form-control" placeholder="District" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">City <span style="color:red">*</span></label>
+                        <input name="city" type="text" class="form-control" placeholder="City" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Area <span style="color:red">*</span></label>
+                        <input name="area" type="text" class="form-control" placeholder="Area" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Pin Code <span style="color:red">*</span></label>
+                        <input name="pincode" type="number" class="form-control" min="600000" max="699999"
+                            placeholder="Pin Code" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-4">
+                <div class="pt-3 text-primary h5">Company Details</div>
+
+                <div class="row mt-3">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Startup Name <span style="color:red">*</span></label>
+                        <input name="startupName" type="text" class="form-control" placeholder="Startup Name" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Legal Status <span style="color:red">*</span></label>
+                        <select name="legalStatus" class="form-select" required>
+                            <option disabled selected value="">Select Type</option>
+                            <option>Proprietorship</option>
+                            <option>Partnership</option>
+                            <option>LLP</option>
+                            <option>Pvt Ltd</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Year Established <span style="color:red">*</span></label>
+                        <input name="yearEstablished" type="number" class="form-control" placeholder="YYYY" min="1800"
+                            max="2099" required>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Stage <span style="color:red">*</span></label>
+                        <select name="stage" class="form-select" required>
+                            <option disabled selected value="">Select Stage</option>
+                            <option>Idea</option>
+                            <option>Prototype</option>
+                            <option>Early</option>
+                            <option>Scaling</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Sector <span style="color:red">*</span></label>
+                        <select name="sector" class="form-select" required>
+                            <option disabled selected value="">Select Sector</option>
+                            <option>EdTech</option>
+                            <option>HealthTech</option>
+                            <option>AI</option>
+                            <option>DeepTech</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label">Founder Details <span style="color:red">*</span></label>
+                        <textarea name="founderDetails" class="form-control" rows="3"
+                            placeholder="Founder Name, Qualification, Background" required></textarea>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Team Size <span style="color:red">*</span></label>
+                        <input name="teamSize" type="number" class="form-control" placeholder="Number of team members"
+                            required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">GST / CIN <span style="color:red">*</span></label>
+                        <input name="gstNumber" type="text" class="form-control"
+                            placeholder="Registered GST / CIN Number" required>
+                    </div>
+
+                    <div class="col-md-12 mb-3">
+                        <label class="form-label">Registered Office Address <span style="color:red">*</span></label>
+                        <textarea name="officeAddress" class="form-control" rows="2" placeholder="Address"
+                            required></textarea>
+                    </div>
+                </div>
+
+                <div class="pt-3 text-primary h5">Startup Requirements</div>
+
+                <div class="row mt-3">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Funding Needed?</label>
+                        <select name="funding" class="form-select">
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Mentorship Required?</label>
+                        <select name="mentorship" class="form-select">
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Technology Support Required?</label>
+                        <select name="techSupport" class="form-select">
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Incubation Space Needed?</label>
+                        <select name="incubation" class="form-select">
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Internship Support?</label>
+                        <select name="internship" class="form-select">
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Government Scheme Eligibility Check?</label>
+                        <select name="govtCheck" class="form-select">
+                            <option>No</option>
+                            <option>Yes</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-success px-4">Submit</button>
+                <button type="reset" class="btn btn-secondary px-4 ms-2">Reset</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("startupForm").addEventListener("submit", function (event) {
+
+          
+            const requiredFields = this.querySelectorAll("[required]");
+            let allFilled = true;
+
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    allFilled = false;
+                }
+            });
+
+            if (!allFilled) {
+                event.preventDefault();
+                alert("Please fill all the required (*) fields before submitting.");
+                return;
+            }
+
+          
+            event.preventDefault();
+
+            const formData = new FormData(this);
+            const data = {};
+
+            formData.forEach((value, key) => {
+                data[key] = value;
+            });
+
+            console.log("FULL FORM DATA:");
+            console.log(data);
+
+            alert("Form submitted! Check console for full details.");
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
